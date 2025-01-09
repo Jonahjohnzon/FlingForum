@@ -11,7 +11,7 @@ mongoose();
 app.use(require('express').json());
 app.use('/', router);
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log('Connected to port ' + port);
 });

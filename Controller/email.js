@@ -15,11 +15,11 @@ module.exports ={
             try{
               
                  await transporter.sendMail({
-                    from: '"VIDFORUM 👻" <foo@example.com>',
+                    from: '"FLINGFORUM 👻" <foo@example.com>',
                     to: userEmail,
                     subject: " Verify Email Address ✔",
                     text: "",
-                    html : `<b>Hello</b><br/><p>Please verify your vidforum account by clicking the link</p><br/><B>LINK NOT ACCEPTABLE AFTER ONE HOUR</B> <br/>https://vidplus.com.ng/activate/${token}`
+                    html : `<b>Hello</b><br/><p>Please verify your vidforum account by clicking the link</p><br/><B>LINK NOT ACCEPTABLE AFTER ONE HOUR</B> <br/>https://flingforum.site/activate/${token}`
                 })
             
             }
@@ -31,11 +31,11 @@ module.exports ={
       try{
         
            await transporter.sendMail({
-              from: '"VIDFORUM PASSWORD CHANGE 👻" <foo@example.com>',
+              from: '"FLINGFORUM PASSWORD CHANGE 👻" <foo@example.com>',
               to: userEmail,
               subject: " Link To Change Password ✔",
               text: "",
-              html : `<b>Hello</b><br/><p>Please verify you want to change your password by clicking the link</p><br/><B>LINK NOT ACCEPTABLE AFTER ONE HOUR</B> <br/>https://vidplus.com.ng/password/${token}`
+              html : `<b>Hello</b><br/><p>Please verify you want to change your password by clicking the link</p><br/><B>LINK NOT ACCEPTABLE AFTER ONE HOUR</B> <br/>https://flingforum.site/password/${token}`
           })
       
       }
