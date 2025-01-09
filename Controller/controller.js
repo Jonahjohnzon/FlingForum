@@ -142,7 +142,7 @@ const register = async (req, res) => {
       notification: {
         notify: {
           message:
-            "🌟 Welcome to the ThreadMind community! Dive into discussions, share your passion, and make yourself at home. Enjoy your stay! 🚀",
+            "🌟 Welcome to the Fling community! Dive into discussions, share your passion, and make yourself at home. Enjoy your stay! 🚀",
         },
         alarm: true,
       },
@@ -1333,7 +1333,7 @@ const getAdmin = async (req, res)=>{
         $project: {
           _id: 1,
           category: 1,
-          items: { $slice: ['$items', 2] }
+          items: { $slice: ['$items', 1] }
         }
       },
       { $unwind: '$items' },
